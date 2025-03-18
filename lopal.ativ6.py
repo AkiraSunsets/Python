@@ -105,7 +105,23 @@ elif (a == b) or (a == c) or (b == c):
 else:
    print('Escaleno')
 
+#Estrutura de decisão
 
+idade = int(input("Insira sua idade: "))
+renda = float(input("Insira sua renda: "))
+
+if idade > 18:
+    print("Qualificado para emitir um empréstimo")
+elif idade < 18:
+    if renda > 1000:
+        print("Pode pedir empréstimo se tiver renda acima de R$ 1.000,00")
+    else:
+        print("Não pode pedir empréstimo")
+elif idade >= 18:
+    if renda > 1500:
+        print("Pode pedir um empréstimo")
+    else:
+        print("Não pode pedir um empréstimo")
 
 
 
