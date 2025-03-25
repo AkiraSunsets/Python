@@ -15,7 +15,6 @@ for cor in cores:
     print("cor:", cor)
 
 #4 - Dicionário
-
 pessoa ={
     "nome": "Ana",
     "idade": "30",
@@ -27,7 +26,6 @@ for chave, valor in pessoa.items():
     print(f"{chave}:{valor}")
 
 #5 - Dicionário do Dicionário
-
 alunos={
     "123":{
         "nome": "Lucas",
@@ -45,14 +43,12 @@ for ra, dados in alunos.items():
 
 print(alunos["456"]["nome"]) #Acessar aluno especifico
 
-
 #6 - Conjuntos
 animais = {"gato", "cachorro", "elefante", "girafa"}
 for animal in animais:
     print("Animal:", animal)
 
 #7 - Range
-
 for numero in range(5):
 #for numero in range(1,11)
 #for numero in range(0,11,2)
@@ -60,7 +56,6 @@ for numero in range(5):
     print(numero)
 
 #8 - Abrir arquivo
-
 nome_arquivo = "C:/Users/51931882819/Documents/AKIRA.txt"
 with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
     for linha in arquivo:
