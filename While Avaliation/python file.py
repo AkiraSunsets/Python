@@ -63,4 +63,32 @@ while contador < 3:
             print("Acesso restrito")
             break
 -----------------------------------------------------------------------------------------
-#6
+#6#6) Peça 10 números e separe em duas listas: pares e ímpares. Mostre as duas no final.
+for num in range(10):
+    number = int(input("Digite um número: \n"))
+    if number % 2 == 0:
+       pares.append(number)
+    else:
+        impares.append(number)
+
+print(f"lista de pares\n{pares}")
+print(f"lista de pares\n{impares}")
+
+#6) Peça 10 números e separe em duas listas: pares e ímpares. Mostre as duas no final.
+# Inicializando as listas de pares e ímpares
+pares = []
+impares = []
+
+# Laço para solicitar 10 números
+for num in range(10):
+    number = int(input("Digite um número: \n"))
+
+    # Verifica se o número é par ou ímpar e adiciona na lista correspondente
+    if number % 2 == 0:
+        pares.append(number)
+    else:
+        impares.append(number)
+
+# Exibe as listas de números pares e ímpares
+print(f"Lista de pares: {pares}")
+print(f"Lista de ímpares: {impares}")
