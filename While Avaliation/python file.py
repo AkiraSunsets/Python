@@ -47,6 +47,22 @@ while opcao != 4:
         print("Opção inválida, tente novamente.")
 
 ----------------------------------------------------------------------------------------------
+# Crie um programa que peça dois números inteiros
+# e exiba todos os números entre eles que são primos.
+# Use for
+num_first = int(input("Digite o primeiro número: \n"))
+num_second = int(input("Digite o segundo número: \n"))
+
+print(f"Números primos entre {num_first} e {num_second}:")
+
+for numero in range(num_first, num_second + 1):
+    if numero > 1:
+        for i in range(2, numero):
+            if numero % i == 0:
+                break
+        else:
+            print(numero)
+---------------------------------------------------------------------------------------------
 #5) O usuário tem 3 tentativas para acertar a senha.
 # Se errar todas, o acesso é bloqueado. Use while.
 senha = 1234
@@ -63,17 +79,6 @@ while contador < 3:
             print("Acesso restrito")
             break
 -----------------------------------------------------------------------------------------
-#6#6) Peça 10 números e separe em duas listas: pares e ímpares. Mostre as duas no final.
-for num in range(10):
-    number = int(input("Digite um número: \n"))
-    if number % 2 == 0:
-       pares.append(number)
-    else:
-        impares.append(number)
-
-print(f"lista de pares\n{pares}")
-print(f"lista de pares\n{impares}")
-
 #6) Peça 10 números e separe em duas listas: pares e ímpares. Mostre as duas no final.
 # Inicializando as listas de pares e ímpares
 pares = []
@@ -82,17 +87,15 @@ impares = []
 # Laço para solicitar 10 números
 for num in range(10):
     number = int(input("Digite um número: \n"))
-
-    # Verifica se o número é par ou ímpar e adiciona na lista correspondente
     if number % 2 == 0:
         pares.append(number)
     else:
         impares.append(number)
 
-# Exibe as listas de números pares e ímpares
 print(f"Lista de pares: {pares}")
 print(f"Lista de ímpares: {impares}")
 
+-----------------------------------------------------------------------------
 #7) Peça uma frase e conte quantas vogais há nela.
 # Mostre o total de cada uma (a, e, i, o, u).
 
@@ -105,7 +108,23 @@ for letra in frase:
         contador += 1
 
 print(f"A frase '{frase}' contém {contador} vogais")
+-------------------------------------------------------------------------------
+import random
 
+cara = 0
+while(True):
+    resultado = random.choice(["Cara", "Coroa"])
+    print(f"Cara ou coroa??{resultado}")
+    if resultado == "Cara":
+        cara += 1
+
+    else:
+        cara = 0
+
+    if cara >= 3:
+        print("Cara apareceu 3 vezes seguidas!")
+        break
+-----------------------------------------------------------------------
 #9) Crie um programa que leia uma sequência de números e
 # determine quantos números são menores que a média.
 num = []
@@ -124,3 +143,4 @@ media = soma / len(num)
 
 print(f"O menor número é: {menor}")
 print(f"A média é {media}")
+-------------------------------------------------------------------------
