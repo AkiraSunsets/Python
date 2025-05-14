@@ -41,3 +41,20 @@ for numero in numeros:
     quadrados.append(numero ** 2) #numero vezes ele mesmo.
 print(quadrados)
 #================================================================
+print("desafio - Faça um programa que calcule a soma dos divisores de um número inteiro definido pelo usuário.Ex: Se o usuário escolheu 10, temos 1 + 2 + 5 + 10 = 18")
+
+soma = 0 #inicializa variavel soma
+numero = int(input("Digite um número: \n"))
+
+for num in range(1,num+1): #para cada num dentro do intervalo 1 e numero +1 faça
+    if num % 1 == 0:      # se o resto da divisão de número por num for zero faça
+        soma = soma + num  #atualiza soma com num
+print(soma)
+
+#================================================================
+print("Faça um programa que imprima os n primeiros múltiplos de 5, sendo n definido pelo usuárioEx: Se o usuário escolheu n=3, será impresso 5,10,15.")
+num = int(input("Digite o numero multiplo de 5 que deseja: \n"))
+
+for num in range(1,num): #para cada num no intervalo de 1 a numero+1 faça:
+    print(f'{5 * num}') #imprime 5 vezes num
+#================================================================
