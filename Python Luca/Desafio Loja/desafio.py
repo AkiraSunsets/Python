@@ -6,7 +6,10 @@ vendas = [0, 0, 0, 0]
 compra_estoque = [0, 0, 0, 0]
 
 while True:
-    print("\n--- Menu ---")
+    print("\n" + "=" * 40)
+    print("✨  Akira's Store  ✨")
+    print("=" * 40)
+    print(" Seja Bem vindo! Selecione uma das opções abaixo: ")
     print("1 - Registrar Venda")
     print("2 - Compra de estoque")
     print("3 - Resumo da loja")
