@@ -54,3 +54,25 @@ sagas.update({(1,2):"Digimon"})
 print(sagas)
 
 #====================================================
+#remover itens do dicionario
+
+pokemon = {
+    "Agua" : "Squirtle",
+    "Fogo" : "Chamander",
+    "Grama" : "Bulbassauro"
+}
+
+dado = pokemon.pop("Agua")
+print(dado)
+print(pokemon)
+#o metodo pop serve para retornar o elemento anterior
+
+#===============================================
+pokemon = {
+    "Agua" : "Squirtle",
+    "Fogo" : "Chamander",
+    "Grama" : "Bulbassauro"
+}
+
+del pokemon["Agua"] #apagara o dado
+print(pokemon)
