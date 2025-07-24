@@ -1,0 +1,15 @@
+
+1) Crie uma função chamada "mostrar_hora" que imprime a hora atual do sistema.
+
+2) Escreva uma função chamada "mostrar_menu" que imprime um menu simples com algumas opções.
+
+3) Crie uma função chamada "mostrar_mensagem" que imprime uma mensagem personalizada com o nome do usuário.
+
+4) Escreva uma função chamada "imprimir_triangulo" que imprime um triângulo formado por asteriscos.
+
+Desafio) Foi realizada uma pesquisa de algumas características e gostos de quatro habitantes incluindo:
+nome, sexo, esporte favorito (Natação, Futebol, Volêi, Tênis) e idade. Com esses dados faça:
+- Função que armazene os dados em uma lista. Dica: Use dicionários dentro da lista.
+- Calcule a idade média de homens que gostam de natação. Caso não haja homens que gostam de natação chame uma função e
+  imprima um aviso de que não há homens que gostam de natação.
+"""
