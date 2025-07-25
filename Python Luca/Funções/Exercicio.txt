@@ -1,7 +1,13 @@
 
-1) Crie uma função chamada "mostrar_hora" que imprime a hora atual do sistema.
+#1) Crie uma função chamada "mostrar_hora" que imprime a hora atual do sistema.
+from datetime import datetime
+def mostrar_hora():
+    hora_atual = datetime.now()
+    hora_formatada = hora_atual.strftime("%H:%M:%S")
+    print(hora_formatada)
+mostrar_hora()
 
-2) Escreva uma função chamada "mostrar_menu" que imprime um menu simples com algumas opções.
+#2) Escreva uma função chamada "mostrar_menu" que imprime um menu simples com algumas opções.
 def mostrar_menu():
     print("=== MENU PRINCIPAL ===")
     print("1. Cadastrar usuário")
@@ -11,16 +17,27 @@ def mostrar_menu():
 
 mostrar_menu()
 
-3) Crie uma função chamada "mostrar_mensagem" que imprime uma mensagem personalizada com o nome do usuário.
+#3) Crie uma função chamada "mostrar_mensagem" que imprime uma mensagem personalizada com o nome do usuário.
+def mostrar_mensagem():
+    mensagem = input("Digite uma mensagem: ")
+    print(mensagem)
+mostrar_mensagem()
 
-4) Escreva uma função chamada "imprimir_triangulo" que imprime um triângulo formado por asteriscos.
+#4) Escreva uma função chamada "imprimir_triangulo" que imprime um triângulo formado por asteriscos.
+def imprimir_triangulo(linhas):
+    for i in range(1, linhas + 1):
+        for j in range(linhas - i):
+            print("", end="")
+            for j in range(2 * i - 1):
+                print("*", end="")
+            print()
+imprimir_triangulo(5)
 
-Desafio) Foi realizada uma pesquisa de algumas características e gostos de quatro habitantes incluindo:
-nome, sexo, esporte favorito (Natação, Futebol, Volêi, Tênis) e idade. Com esses dados faça:
-- Função que armazene os dados em uma lista. Dica: Use dicionários dentro da lista.
-- Calcule a idade média de homens que gostam de natação. Caso não haja homens que gostam de natação chame uma função e
-  imprima um aviso de que não há homens que gostam de natação.
-"""
+#Desafio) Foi realizada uma pesquisa de algumas características e gostos de quatro habitantes incluindo:
+#nome, sexo, esporte favorito (Natação, Futebol, Volêi, Tênis) e idade. Com esses dados faça:
+#- Função que armazene os dados em uma lista. Dica: Use dicionários dentro da lista.
+#- Calcule a idade média de homens que gostam de natação. Caso não haja homens que gostam de natação chame uma função e
+# imprima um aviso de que não há homens que gostam de natação.
 
 def aviso_sem_homens_natacao():
     print("Não há homens que gostam de natação.")
