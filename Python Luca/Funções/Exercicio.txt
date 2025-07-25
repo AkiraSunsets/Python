@@ -2,6 +2,14 @@
 1) Crie uma função chamada "mostrar_hora" que imprime a hora atual do sistema.
 
 2) Escreva uma função chamada "mostrar_menu" que imprime um menu simples com algumas opções.
+def mostrar_menu():
+    print("=== MENU PRINCIPAL ===")
+    print("1. Cadastrar usuário")
+    print("2. Listar usuários")
+    print("3. Buscar usuário")
+    print("4. Sair")
+
+mostrar_menu()
 
 3) Crie uma função chamada "mostrar_mensagem" que imprime uma mensagem personalizada com o nome do usuário.
 
