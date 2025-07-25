@@ -13,3 +13,26 @@ nome, sexo, esporte favorito (Natação, Futebol, Volêi, Tênis) e idade. Com e
 - Calcule a idade média de homens que gostam de natação. Caso não haja homens que gostam de natação chame uma função e
   imprima um aviso de que não há homens que gostam de natação.
 """
+
+def aviso_sem_homens_natacao():
+    print("Não há homens que gostam de natação.")
+
+def obter_habitantes():
+    return [
+        {"nome": "João", "sexo": "M", "esporte": "Natação", "idade": 25},
+        {"nome": "Maria", "sexo": "F", "esporte": "Vôlei", "idade": 22},
+        {"nome": "Carlos", "sexo": "M", "esporte": "Futebol", "idade": 30},
+        {"nome": "Ana", "sexo": "F", "esporte": "Tênis", "idade": 28}
+    ]
+
+def calcular_media_idade_natacao(habitantes):
+    homens_natacao = [h for h in habitantes if h["sexo"] == "M" and h["esporte"] == "Natação"]
+    
+    if not homens_natacao:
+        aviso_sem_homens_natacao()
+    else:
+        media = sum(h["idade"] for h in homens_natacao) / len(homens_natacao)
+        print(f"Média de idade dos homens que gostam de natação: {media:.2f}")
+
+habitantes = obter_habitantes()
+calcular_media_idade_natacao(habitantes)
